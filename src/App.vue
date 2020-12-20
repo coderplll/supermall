@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+<!--    keppalive保留状态,切换页面回去当时浏览的状态   -->
+    <keep-alive exclude="Detail">
+      <router-view></router-view>
+    </keep-alive>
+
     <main-tab-bar/>
   </div>
 </template>

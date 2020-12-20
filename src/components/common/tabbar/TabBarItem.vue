@@ -13,7 +13,10 @@
 export default {
   name: "TabBarItem",
   props: {
-    path: String,
+    path: {
+      type: String,
+      default: ''
+    },
     activeColor: {
       type: String,
       default: 'red'
